@@ -11,6 +11,7 @@
     grid-template-rows: repeat(4, 1fr);
     width: 100vw;
     height: 100vh;
+    gap: 10px;
 }
 
 .nav {
@@ -21,10 +22,17 @@
     gap: 110px;
 
     padding-top: 20px;
-    padding-left: 80px;
+    padding-left: 30px;
 
     background: #38bdf8;
     color: rgb(224, 229, 233);
+
+    min-width: 250px;
+    max-width: 400px;
+
+    border-radius: 20px;
+    margin-left: 10px;
+    margin-top: 10px;
 }
 
 .dashboard {
@@ -51,11 +59,15 @@
     background: whitesmoke;
 
     padding: 15px;
-min-width: 986px;
+    min-width: 986px;
 
     grid-template-rows: repeat(2, 60px);
     grid-template-columns: repeat(3, 1fr);
     height: 170px;
+
+    border-radius: 20px;
+    margin-right: 45px;
+    margin-top:10px;
     /*add box shadow*/
 }
 
@@ -70,9 +82,18 @@ min-width: 986px;
 .searchBar {
     height: 25px;
     grid-area: 1 / 1/ 1 / span 2;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    margin-left: 35px;
 }
 
 .userStuff {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    gap: 35px;
     margin-left: 80px;
     grid-area: 1 / 3;
     height: 50px;
@@ -101,7 +122,11 @@ min-width: 986px;
     padding: 30px;
     padding-bottom: 40px;
 
-    margin-top: -72px;
+    margin-top: -50px;
+    margin-bottom: 10px;
+
+    border-radius: 20px;
+    margin-right: 45px;
 }
 
 .titles {
@@ -214,9 +239,25 @@ input {
 .profileName {
     font-size: 20px;
     font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    margin-left: 30px;
 }
 
 .userName {
     font-size: 15px;
     font-weight: bold;
+}
+
+li {
+    display:flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.title {
+    display:flex;
+    gap: 15px;
 }
