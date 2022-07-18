@@ -1,10 +1,117 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.gridContainer {
+    display: grid;
+    border-style: solid;
+    border-color: red;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    width: 100vw;
+    height: 100vh;
+}
+
 .nav {
     display: grid;
+    grid-area: 1 / 1 / span 4 / span 1;
+
     padding: 5px;
 
     background: #38bdf8;
     color: rgb(224, 229, 233);
 }
+
+.header {
+    box-shadow: 0px 3px -7px black;
+    display:grid;
+    background: whitesmoke;
+    /*add box shadow*/
+}
+
+.news {
+    display: grid;
+    background-color: grey;
+    grid-area: 2 / 3 / span 3 / span 1;
+    background:white;
+    border-radius: 15px;
+}
+
+.projects {
+    background-color: white;
+}
+
+.main {
+    display: grid;
+    background-color: #e2e8f0;
+    grid-area: 2 / 2 / span 4 / span 4;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 50px repeat(3, 1fr);
+    gap: 10px;
+    padding: 10px;
+    padding-bottom: 40px;
+}
+
+.titles {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr) 26s0px repeat(2, 1fr);
+    grid-template-rows: 50px;
+    grid-area: 1 / 1 / span 1 / 4;
+    background-color:#e2e8f0;
+}
+
+.YourProjects {
+    grid-area: 1 / 1 / span 1 / span 2;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.Announcements {
+    grid-area: 1 / 4 ;
+}
+
+.project.one {
+    grid-area: 2 / 1;
+}
+
+.project.two {
+    grid-area: 2 / 2;
+}
+
+.project.three {
+    grid-area: 3 / 1;
+}
+
+.project.four {
+    grid-area: 3 / 2;
+}
+
+.project.five {
+    grid-area: 4 / 1;
+}
+
+.project.six {
+    grid-area: 4 / 2;
+}
+
+.project {
+    text-align:left;
+    padding-top: 15px;
+    padding: 10px;
+    background: white;
+    border-radius: 15px;
+    border-left: 8px solid rgb(240, 240, 20);
+}
+
+
+
+.iconPlaceholder {
+    border: 1px solid black;
+
+}
+
 
 ul {
     list-style-type: none;
@@ -19,22 +126,4 @@ button {
     background: #5b21b6;
     color: white;
     border-color: #a78bfa;
-}
-
-.main  {
-    display: grid;
-}
-
-.news {
-    display: grid;
-    background-color: grey;
-}
-
-.projects {
-    display: grid;
-}
-
-.main {
-    display: grid;
-    background-color: red;
 }
