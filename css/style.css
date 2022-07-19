@@ -185,10 +185,6 @@
     transform: scale(1.08);
 }
 
-.news:hover {
-    transform: scale(1.07);
-}
-
 .project {
     text-align:left;
     padding-top: 15px;
@@ -263,6 +259,10 @@ button {
     border-color: #a78bfa;
 }
 
+button:hover  {
+    transform: scale(1.05);
+}
+
 .magnify {
     width: 30px;
     height: 30px;
@@ -271,6 +271,10 @@ button {
 .alleyCat {
     width: 60px;
     height: 60px;
+}
+
+.alleyCat:hover, .bell:hover, .magnify:hover, .profilepic:hover {
+    transform: scale(1.07);
 }
 
 .profilepic {
