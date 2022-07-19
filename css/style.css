@@ -181,6 +181,14 @@
     grid-area: 4 / 2;
 }
 
+.project:hover {
+    transform: scale(1.08);
+}
+
+.news:hover {
+    transform: scale(1.07);
+}
+
 .project {
     text-align:left;
     padding-top: 15px;
@@ -191,7 +199,7 @@
 
     display: grid;
     grid-template-rows: 20px 100px 40px;
-    grid-template-columns: 150px 100px;
+    grid-template-columns: 1fr 1fr;
 }
 
 div.icons {
@@ -207,10 +215,19 @@ div.icons > img {
     height: 25px;
 }
 
+div.icons > img:hover {
+    transform: scale(1.1);
+}
+
 .project > img {
     grid-area: 2 / 1;
     margin-top: 5px;
     width: 110px;
+}
+
+.project.two > img {
+    width: 120px;
+    height: 120px;
 }
 
 .project.three > img{
@@ -327,7 +344,11 @@ li {
     display: flex;
     justify-content: left;
     gap: 20px;
-    margin-left: 50px;
+    margin-left: 40px;
+}
+
+.trendingStuff:hover {
+    transform: scale(1.2);
 }
 
 .trendingStuff .one {
@@ -370,4 +391,9 @@ span.text {
 
 .span.text.one {
     grid-area: 1 / 2;
+}
+
+a {
+    text-decoration:none;
+    color:black;
 }
