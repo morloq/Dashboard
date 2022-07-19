@@ -207,6 +207,26 @@ div.icons > img {
     height: 25px;
 }
 
+.project > img {
+    grid-area: 2 / 1;
+    margin-top: 5px;
+    width: 110px;
+}
+
+.project.three > img{
+    width: 200px;
+    margin-top: 2px;
+}
+
+.project.four > img {
+    width: 200px;
+}
+
+.project.five > img {
+    width: 130px;
+    margin-left: 15px;
+}
+
 .title {
     font-weight: bold;
 }
